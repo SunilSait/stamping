@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Foilcraft Pricing — Transparent pricing for foil stamping, embossing and specialty print. Studio, Premier and Bespoke plans available.">
+    <title>Pricing | Foilcraft Print Studio</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='47' stroke='%23C9A96E' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Cpath d='M50 15 L75 40 L75 60 L50 85 L25 60 L25 40 Z' fill='%23C9A96E' fill-opacity='0.15' stroke='%23C9A96E' stroke-width='2'/%3E%3Cpath d='M40 38 L40 62 M40 38 L60 38 M40 50 L55 50' stroke='%23C9A96E' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#C9A96E', secondary: '#1A1A2E' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- Page Header -->
+    <section class="py-20 relative overflow-hidden" style="background-image: linear-gradient(rgba(26, 26, 46, 0.85), rgba(26, 26, 46, 0.85)), url('banner_pricing.png'); background-size: cover; background-position: center;">
+        <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none"
+            style="background:radial-gradient(circle,rgba(201,169,110,0.1) 0%,transparent 70%);transform:translate(30%,-30%);">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div class="section-tag mx-auto" style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);"><i class="fas fa-tags text-[10px]"></i> Pricing</div>
+            <h1 class="section-title text-white text-center mt-3">Simple, <span class="gold-text">Transparent</span> Pricing</h1>
+            <p class="section-subtitle text-neutral-400 text-center mx-auto mt-3">Crafted plans for every scale — from boutique designers to global brands.</p>
+
+            <!-- Billing toggle -->
+            <div class="flex items-center justify-center gap-4 mt-8">
+                <span class="text-sm font-medium text-[#1A1A2E] dark:text-white">Per Project</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" id="billing-toggle">
+                    <div
+                        class="w-11 h-6 bg-[#E8E2D8] dark:bg-[#2D2D4A] peer-focus:ring-2 peer-focus:ring-[#C9A96E]/30 rounded-full peer peer-checked:bg-[#C9A96E] after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-5">
+                    </div>
+                </label>
+                <span class="text-sm font-medium text-[#1A1A2E] dark:text-white">Annual Retainer <span
+                        class="badge badge-gold text-[10px] ml-1">Save 20%</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="py-16 bg-[#FAF8F3] dark:bg-[#0D0D1A]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid-3 reveal">
+                <!-- Studio Plan -->
+                <div class="pricing-card">
+                    <div class="mb-8">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                            style="background:rgba(201,169,110,0.1);border:1px solid rgba(201,169,110,0.25);">
+                            <i class="fas fa-cube text-[#C9A96E]"></i>
+                        </div>
+                        <h3 class="text-[#1A1A2E] dark:text-white mb-2"
+                            style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;">Studio</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Perfect for independent designers and
+                            small studios</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="price text-[#1A1A2E] dark:text-white"><sup>$</sup>299<span
+                                class="price-period">/run</span></div>
+                        <p class="text-xs text-neutral-400 mt-1">Min. 50 units per run</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Up to 2 foil colours per
+                            run
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Standard foil selection
+                            (Gold, Silver, Copper)
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Paper & card substrates
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>5 free die revisions
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>14-day production lead time
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-300 line-through opacity-50">
+                            <i class="fas fa-times text-neutral-400 text-xs mt-1 shrink-0"></i>Specialty substrates
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-300 line-through opacity-50">
+                            <i class="fas fa-times text-neutral-400 text-xs mt-1 shrink-0"></i>Priority production
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-300 line-through opacity-50">
+                            <i class="fas fa-times text-neutral-400 text-xs mt-1 shrink-0"></i>Dedicated account manager
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary btn-full">Get Started</a>
+                </div>
+
+                <!-- Premier Plan (Featured) -->
+                <div class="pricing-card featured relative">
+                    <div class="absolute -top-4 left-0 right-0 flex justify-center">
+                        <span class="badge"
+                            style="background:linear-gradient(135deg,#C9A96E,#9E7D46);color:#fff;padding:6px 20px;font-size:0.7rem;">✦
+                            Most Popular</span>
+                    </div>
+                    <div class="mb-8">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                            style="background:rgba(201,169,110,0.2);border:1px solid rgba(201,169,110,0.4);">
+                            <i class="fas fa-crown text-[#C9A96E]"></i>
+                        </div>
+                        <h3 class="text-white mb-2" style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;">
+                            Premier</h3>
+                        <p class="text-sm text-neutral-400">Ideal for brand agencies and growing businesses</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="price"><sup style="color:#C9A96E;">$</sup><span
+                                style="color:#E2C99A;">699</span><span class="price-period"
+                                style="color:rgba(255,255,255,0.6);">/run</span></div>
+                        <p class="text-xs text-neutral-500 mt-1">Min. 100 units per run</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start gap-3 text-sm text-neutral-200">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Up to 5 foil colours per
+                            run
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-200">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Full foil library including
+                            holographic
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-200">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>All specialty substrates
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-200">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Unlimited die revisions
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-200">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>7-day priority production
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-200">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Free physical proof
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-200">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Combine foil + emboss
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-300 line-through opacity-50">
+                            <i class="fas fa-times text-neutral-500 text-xs mt-1 shrink-0"></i>Dedicated account manager
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-full"
+                        style="background:linear-gradient(135deg,#C9A96E,#9E7D46);color:#fff;border-radius:50px;padding:14px 28px;font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Get
+                        Started</a>
+                </div>
+
+                <!-- Bespoke Plan -->
+                <div class="pricing-card">
+                    <div class="mb-8">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                            style="background:rgba(201,169,110,0.1);border:1px solid rgba(201,169,110,0.25);">
+                            <i class="fas fa-gem text-[#C9A96E]"></i>
+                        </div>
+                        <h3 class="text-[#1A1A2E] dark:text-white mb-2"
+                            style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;">Bespoke</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">For global brands requiring volume,
+                            speed and white-glove service</p>
+                    </div>
+                    <div class="mb-8">
+                        <div class="price text-[#1A1A2E] dark:text-white" style="font-size:2.2rem;">Custom</div>
+                        <p class="text-xs text-neutral-400 mt-1">Tailored to your volume & requirements</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Unlimited foil colours
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Custom foil development
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>All techniques combined
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Dedicated account manager
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Express 3-day production
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>Global freight management
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>NDA & exclusivity available
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-300">
+                            <i class="fas fa-check text-[#C9A96E] text-xs mt-1 shrink-0"></i>On-site studio visits
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary btn-full">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison -->
+    <section class="py-20 bg-white dark:bg-[#141420]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 class="section-title text-center mb-12">Full <span class="gold-text">Feature Comparison</span></h2>
+            <div class="overflow-x-auto">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th class="w-1/2">Feature</th>
+                            <th class="text-center">Studio</th>
+                            <th class="text-center">Premier</th>
+                            <th class="text-center">Bespoke</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-medium">Min. quantity</td>
+                            <td class="text-center text-sm text-neutral-500">50 units</td>
+                            <td class="text-center text-sm text-neutral-500">100 units</td>
+                            <td class="text-center text-sm text-neutral-500">Custom</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">Foil colours</td>
+                            <td class="text-center text-sm text-neutral-500">Up to 2</td>
+                            <td class="text-center text-sm text-neutral-500">Up to 5</td>
+                            <td class="text-center text-sm text-neutral-500">Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">Holographic foil</td>
+                            <td class="text-center"><i class="fas fa-times text-neutral-300"></i></td>
+                            <td class="text-center"><i class="fas fa-check text-[#C9A96E]"></i></td>
+                            <td class="text-center"><i class="fas fa-check text-[#C9A96E]"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">Specialty substrates</td>
+                            <td class="text-center"><i class="fas fa-times text-neutral-300"></i></td>
+                            <td class="text-center"><i class="fas fa-check text-[#C9A96E]"></i></td>
+                            <td class="text-center"><i class="fas fa-check text-[#C9A96E]"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">Physical proof</td>
+                            <td class="text-center text-sm text-neutral-500">+$50</td>
+                            <td class="text-center"><i class="fas fa-check text-[#C9A96E]"></i></td>
+                            <td class="text-center"><i class="fas fa-check text-[#C9A96E]"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">Production lead time</td>
+                            <td class="text-center text-sm text-neutral-500">14 days</td>
+                            <td class="text-center text-sm text-neutral-500">7 days</td>
+                            <td class="text-center text-sm text-neutral-500">3 days</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">Die revisions</td>
+                            <td class="text-center text-sm text-neutral-500">5</td>
+                            <td class="text-center text-sm text-neutral-500">Unlimited</td>
+                            <td class="text-center text-sm text-neutral-500">Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">Dedicated manager</td>
+                            <td class="text-center"><i class="fas fa-times text-neutral-300"></i></td>
+                            <td class="text-center"><i class="fas fa-times text-neutral-300"></i></td>
+                            <td class="text-center"><i class="fas fa-check text-[#C9A96E]"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium">Custom foil development</td>
+                            <td class="text-center"><i class="fas fa-times text-neutral-300"></i></td>
+                            <td class="text-center"><i class="fas fa-times text-neutral-300"></i></td>
+                            <td class="text-center"><i class="fas fa-check text-[#C9A96E]"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-[#FAF8F3] dark:bg-[#0D0D1A]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <h2 class="section-title text-center mb-12">Frequently <span class="gold-text">Asked</span></h2>
+            <div class="space-y-4" id="faq-container">
+                <div class="faq-item card card-gold p-0 overflow-hidden">
+                    <button class="faq-btn w-full text-left flex items-center justify-between p-6"
+                        onclick="toggleFaq(this)">
+                        <span class="font-semibold text-[#1A1A2E] dark:text-white text-sm">Can I see a physical sample
+                            before placing a full order?</span>
+                        <i class="fas fa-chevron-down text-[#C9A96E] text-sm transition-transform"></i>
+                    </button>
+                    <div
+                        class="faq-content hidden px-6 pb-6 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
+                        Yes. Premier and Bespoke plans include a free physical proof. Studio plan clients can request a
+                        proof for $50. We strongly recommend proofing for any large order.
+                    </div>
+                </div>
+                <div class="faq-item card card-gold p-0 overflow-hidden">
+                    <button class="faq-btn w-full text-left flex items-center justify-between p-6"
+                        onclick="toggleFaq(this)">
+                        <span class="font-semibold text-[#1A1A2E] dark:text-white text-sm">What file format do you need
+                            for artwork?</span>
+                        <i class="fas fa-chevron-down text-[#C9A96E] text-sm transition-transform"></i>
+                    </button>
+                    <div
+                        class="faq-content hidden px-6 pb-6 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
+                        We accept AI, EPS, or PDF files (vector) with all text outlined. Each colour or technique should
+                        be on a separate Pantone layer. Our artwork team will verify and provide guidance.
+                    </div>
+                </div>
+                <div class="faq-item card card-gold p-0 overflow-hidden">
+                    <button class="faq-btn w-full text-left flex items-center justify-between p-6"
+                        onclick="toggleFaq(this)">
+                        <span class="font-semibold text-[#1A1A2E] dark:text-white text-sm">Do you ship
+                            internationally?</span>
+                        <i class="fas fa-chevron-down text-[#C9A96E] text-sm transition-transform"></i>
+                    </button>
+                    <div
+                        class="faq-content hidden px-6 pb-6 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
+                        Yes — we ship worldwide. Standard international shipping is available for all plans. Bespoke
+                        clients receive managed freight with full insurance and tracking.
+                    </div>
+                </div>
+                <div class="faq-item card card-gold p-0 overflow-hidden">
+                    <button class="faq-btn w-full text-left flex items-center justify-between p-6"
+                        onclick="toggleFaq(this)">
+                        <span class="font-semibold text-[#1A1A2E] dark:text-white text-sm">Can I combine multiple
+                            techniques (e.g. foil + emboss)?</span>
+                        <i class="fas fa-chevron-down text-[#C9A96E] text-sm transition-transform"></i>
+                    </button>
+                    <div
+                        class="faq-content hidden px-6 pb-6 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
+                        Absolutely — and we encourage it. Combining foil stamping with blind embossing creates stunning
+                        dimensional effects. All plans support technique combinations; pricing is modular.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            content.classList.toggle('hidden');
+            icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+    </script>
+</body>
+
+</html>

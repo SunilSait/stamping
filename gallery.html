@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Foilcraft Gallery — Explore our portfolio of premium foil stamped invitations, embossed packaging, letterpress stationery and luxury brand print projects.">
+    <title>Gallery | Foilcraft Print Studio</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='47' stroke='%23C9A96E' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Cpath d='M50 15 L75 40 L75 60 L50 85 L25 60 L25 40 Z' fill='%23C9A96E' fill-opacity='0.15' stroke='%23C9A96E' stroke-width='2'/%3E%3Cpath d='M40 38 L40 62 M40 38 L60 38 M40 50 L55 50' stroke='%23C9A96E' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#C9A96E', secondary: '#1A1A2E' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- Page Header -->
+    <section class="py-20 relative overflow-hidden" style="background-image: linear-gradient(rgba(26, 26, 46, 0.85), rgba(26, 26, 46, 0.85)), url('banner_gallery.png'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 pointer-events-none"
+            style="background-image:linear-gradient(rgba(201,169,110,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,110,0.04) 1px,transparent 1px);background-size:60px 60px;">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div class="section-tag mx-auto"
+                style="background:rgba(201,169,110,0.1);border-color:rgba(201,169,110,0.25);"><i
+                    class="fas fa-images text-[10px]"></i> Portfolio</div>
+            <h1 class="text-white mt-3" style="font-family:'Cormorant Garamond',serif;">The Foilcraft <span
+                    class="gold-text">Gallery</span></h1>
+            <p class="text-neutral-400 mt-4 max-w-2xl mx-auto text-lg">A curated selection of projects across
+                invitations, packaging, stationery, branding and specialty print.</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="sticky top-20 z-40 bg-white dark:bg-[#141420] border-b border-[#E8E2D8] dark:border-[#2D2D4A] py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-wrap items-center gap-2 justify-center" id="gallery-filters">
+                <button
+                    class="gallery-filter-btn active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all"
+                    data-filter="all" style="background:linear-gradient(135deg,#C9A96E,#9E7D46);color:#fff;">All
+                    Projects</button>
+                <button
+                    class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-[#E8E2D8] dark:border-[#2D2D4A] text-neutral-500 dark:text-neutral-400 hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all"
+                    data-filter="invitations">Invitations</button>
+                <button
+                    class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-[#E8E2D8] dark:border-[#2D2D4A] text-neutral-500 dark:text-neutral-400 hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all"
+                    data-filter="packaging">Packaging</button>
+                <button
+                    class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-[#E8E2D8] dark:border-[#2D2D4A] text-neutral-500 dark:text-neutral-400 hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all"
+                    data-filter="branding">Branding</button>
+                <button
+                    class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-[#E8E2D8] dark:border-[#2D2D4A] text-neutral-500 dark:text-neutral-400 hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all"
+                    data-filter="stationery">Stationery</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-16 bg-[#FAF8F3] dark:bg-[#0D0D1A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+
+                <!-- Item 1 - Invitations -->
+                <div class="gallery-item" data-category="invitations">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#1A1A2E,#0F0D18);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                                <div class="w-20 h-28 rounded border-2 border-[#C9A96E] flex items-center justify-center"
+                                    style="background:rgba(201,169,110,0.08);">
+                                    <div class="text-center">
+                                        <div class="text-[#C9A96E] text-xl font-bold"
+                                            style="font-family:'Cormorant Garamond',serif;">A&M</div>
+                                        <div class="text-[#C9A96E] text-[9px] tracking-widest">♦</div>
+                                    </div>
+                                </div>
+                                <div class="text-[#C9A96E] text-[10px] uppercase tracking-[0.2em]">24K Gold Foil</div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Laurent Wedding Suite</h3>
+                                <span class="badge badge-gold text-[10px]">Hot Foil</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">Gold foil on 400gsm black cotton stock. Letterpress
+                                inner pages.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#C9A96E,#F2D98A);"
+                                    data-tooltip="Gold Foil"></div>
+                                <div class="w-5 h-5 rounded-full" style="background:#1A1A2E;border:1px solid #333;"
+                                    data-tooltip="Black Cotton"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 - Packaging -->
+                <div class="gallery-item" data-category="packaging">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#1C1628,#2D1F40);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                                <div class="w-24 h-24 rounded-xl flex items-center justify-center"
+                                    style="background:rgba(201,169,110,0.1);border:1px solid rgba(201,169,110,0.3);">
+                                    <div class="text-[#C9A96E] text-4xl font-light"
+                                        style="font-family:'Cormorant Garamond',serif;">N</div>
+                                </div>
+                                <div class="text-neutral-400 text-[10px] uppercase tracking-[0.2em]">Nocturne Perfume
+                                </div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Nocturne Perfume Box</h3>
+                                <span class="badge badge-gold text-[10px]">Blind Emboss</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">Deep blind emboss on matte black board with silver
+                                foil accent.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#C0C0C0,#E0E0E0);"
+                                    data-tooltip="Silver Foil"></div>
+                                <div class="w-5 h-5 rounded-full" style="background:#1A1A2E;border:1px solid #333;"
+                                    data-tooltip="Black Board"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 - Branding -->
+                <div class="gallery-item" data-category="branding">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#F5F0E8,#EDE5D6);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                                <div class="w-32 h-20 rounded flex items-center justify-center"
+                                    style="background:white;border:1px solid #E0D8CC;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+                                    <div class="text-[#1A1A2E] text-base font-bold tracking-wider"
+                                        style="font-family:'Cormorant Garamond',serif;">VANTARA</div>
+                                </div>
+                                <div class="text-neutral-400 text-[10px] uppercase tracking-[0.2em]">Business Cards
+                                </div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Vantara Business Cards</h3>
+                                <span class="badge badge-gold text-[10px]">Die Cut</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">Rounded die-cut with gold foil logo on 600gsm
+                                duplex board.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#C9A96E,#F2D98A);"
+                                    data-tooltip="Gold Foil"></div>
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#F5F0E8,#EDE5D6);border:1px solid #E0D8CC;"
+                                    data-tooltip="Ivory Board"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 - Stationery -->
+                <div class="gallery-item" data-category="stationery">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#0A2540,#163A60);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                                <svg width="100" height="80" viewBox="0 0 100 80" fill="none">
+                                    <rect x="10" y="10" width="80" height="60" rx="4" fill="rgba(201,169,110,0.1)"
+                                        stroke="#C9A96E" stroke-width="1" />
+                                    <line x1="20" y1="28" x2="80" y2="28" stroke="#C9A96E" stroke-width="1.5" />
+                                    <line x1="20" y1="40" x2="65" y2="40" stroke="#C9A96E" stroke-width="1" />
+                                    <line x1="20" y1="50" x2="70" y2="50" stroke="#C9A96E" stroke-width="1" />
+                                </svg>
+                                <div class="text-[#C9A96E] text-[10px] uppercase tracking-[0.2em]">Letterhead Suite
+                                </div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Azure Letterhead Suite</h3>
+                                <span class="badge badge-gold text-[10px]">Letterpress</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">Letterpress on uncoated stock. Gold foil letterhead
+                                with debossed address.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#C9A96E,#F2D98A);"
+                                    data-tooltip="Gold Foil"></div>
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#0A2540,#163A60);" data-tooltip="Navy Ink">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 - Invitations -->
+                <div class="gallery-item" data-category="invitations">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#6B2D5E,#9E4080);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                                <div class="text-white text-2xl font-bold"
+                                    style="font-family:'Cormorant Garamond',serif;">Céleste</div>
+                                <div class="w-20 h-0.5"
+                                    style="background:linear-gradient(90deg,transparent,#C9A96E,transparent);"></div>
+                                <div class="text-white/60 text-xs uppercase tracking-wider">Gala Invitation</div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Céleste Gala Invitations</h3>
+                                <span class="badge badge-gold text-[10px]">Hot Foil</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">Rose gold foil on deep plum velvet board with wax
+                                seal custom design.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#E8C0B0,#F4D4C8);"
+                                    data-tooltip="Rose Gold Foil"></div>
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#6B2D5E,#9E4080);"
+                                    data-tooltip="Plum Board"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 - Packaging -->
+                <div class="gallery-item" data-category="packaging">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#2D1B00,#5C3D00);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                                <div class="w-24 h-16 rounded-sm flex items-center justify-center"
+                                    style="background:rgba(201,169,110,0.15);border:1px solid rgba(201,169,110,0.4);">
+                                    <div class="text-[#C9A96E] text-sm font-bold tracking-wider"
+                                        style="font-family:'Cormorant Garamond',serif;">HERITAGE</div>
+                                </div>
+                                <div class="text-[#C9A96E]/60 text-[10px] uppercase tracking-[0.2em]">Wine Label</div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Heritage Wine Labels</h3>
+                                <span class="badge badge-gold text-[10px]">Foil + Emboss</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">Gold foil with blind emboss crest on antique cream
+                                label stock.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#C9A96E,#F2D98A);"
+                                    data-tooltip="Gold Foil"></div>
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#F5F0E8,#EDE5D6);border:1px solid #E0D8CC;"
+                                    data-tooltip="Antique Cream"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 - Branding -->
+                <div class="gallery-item" data-category="branding">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#003300,#005500);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                                <div class="text-[#C9A96E] text-2xl font-bold"
+                                    style="font-family:'Cormorant Garamond',serif;">Foret</div>
+                                <div class="text-[#C9A96E]/60 text-[10px] uppercase tracking-[0.2em]">Sustainable Brand
+                                </div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Foret Brand System</h3>
+                                <span class="badge badge-gold text-[10px]">Eco Foil</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">100% recyclable gold foil on FSC kraft board.
+                                Sustainable luxury done right.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#C9A96E,#F2D98A);"
+                                    data-tooltip="Eco Gold Foil"></div>
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#8B6914,#C49A38);"
+                                    data-tooltip="Kraft Board"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 - Stationery -->
+                <div class="gallery-item" data-category="stationery">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#1C1C1C,#333);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-4">
+                                <div class="flex gap-2">
+                                    <div class="w-12 h-16 rounded-sm"
+                                        style="background:white;box-shadow:0 4px 12px rgba(0,0,0,0.4);"></div>
+                                    <div class="w-16 h-20 rounded-sm"
+                                        style="background:white;box-shadow:0 6px 20px rgba(0,0,0,0.5);"></div>
+                                    <div class="w-12 h-16 rounded-sm"
+                                        style="background:white;box-shadow:0 4px 12px rgba(0,0,0,0.4);"></div>
+                                </div>
+                                <div class="text-neutral-400 text-[10px] uppercase tracking-[0.2em]">Note Cards</div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Monogram Note Cards</h3>
+                                <span class="badge badge-gold text-[10px]">Blind Emboss</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">Multi-level blind emboss on 400gsm cotton stock
+                                with debossed lining.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#F5F0E8,#EDE5D6);border:1px solid #E0D8CC;"
+                                    data-tooltip="Cotton White"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 - Invitations -->
+                <div class="gallery-item" data-category="invitations">
+                    <div class="card card-gold overflow-hidden group cursor-pointer">
+                        <div class="h-64 relative" style="background:linear-gradient(145deg,#0A0A1E,#141428);">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                                <div class="text-4xl"
+                                    style="background:linear-gradient(135deg,#C9A96E,#F2D98A);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">
+                                    ✦</div>
+                                <div class="text-[#C9A96E] text-lg font-bold"
+                                    style="font-family:'Cormorant Garamond',serif;">Winter Gala 2024</div>
+                                <div class="w-16 h-px"
+                                    style="background:linear-gradient(90deg,transparent,#C9A96E,transparent);"></div>
+                                <div class="text-neutral-500 text-[10px] uppercase tracking-wider">Corporate Event Suite
+                                </div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center gap-3">
+                                <i class="fas fa-expand text-white text-2xl"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-widest">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-base font-semibold text-[#1A1A2E] dark:text-white"
+                                    style="font-family:'Cormorant Garamond',serif;">Winter Gala Corporate Suite</h3>
+                                <span class="badge badge-gold text-[10px]">Holographic</span>
+                            </div>
+                            <p class="text-xs text-neutral-400 mb-3">Holographic foil on deep navy stock. Spot UV
+                                pattern overlay.</p>
+                            <div class="flex gap-2">
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#ff0080,#00ffff,#C9A96E);"
+                                    data-tooltip="Holographic Foil"></div>
+                                <div class="w-5 h-5 rounded-full"
+                                    style="background:linear-gradient(135deg,#0A2540,#163A60);"
+                                    data-tooltip="Navy Board"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== CLIENT CASE STUDIES ===== -->
+    <section class="py-24 bg-[#FAF8F3] dark:bg-[#0D0D1A] border-t border-[#E8E2D8] dark:border-[#2D2D4A]" id="case-studies">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <div class="section-tag mx-auto">
+                    <i class="fas fa-scroll text-[10px]"></i> Client Stories
+                </div>
+                <h2 class="section-title mt-3">Editorial <span class="gold-text">Case Studies</span></h2>
+                <p class="section-subtitle max-w-xl mx-auto mt-4 text-sm leading-relaxed text-neutral-500">
+                    A behind-the-scenes look at how we combine distinct materials, custom copper dies, and precision print finishing to bring luxury briefs to life.
+                </p>
+            </div>
+
+            <!-- Case studies grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 reveal">
+                <!-- Case Study 1 -->
+                <div class="bg-white dark:bg-[#1C1C2E] rounded-3xl border border-[#E8E2D8] dark:border-[#2D2D4A] overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[9px] font-bold text-[#C9A96E] bg-[#C9A96E]/10 px-2.5 py-1 rounded-full uppercase tracking-wider">Packaging</span>
+                            <span class="text-xs text-neutral-400">Project No. 042</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#1A1A2E] dark:text-white" style="font-family:'Cormorant Garamond',serif;">The Nocturne Perfume Box</h3>
+                        <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed mb-6">
+                            For a Parisian luxury perfumery, we created an outer sleeve box using 350gsm Gmund Color stock. We combined deep blind debossing for the nocturnal texture with mirror-perfect gold hot foil stamping for the branding shield.
+                        </p>
+                        <ul class="space-y-2 text-xs text-neutral-500 dark:text-neutral-400">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Client:</strong> Nocturne Paris</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Techniques:</strong> Blind Deboss + Gold Foil</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Stock:</strong> Gmund Matte Charcoal (350gsm)</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-[#FAF8F3]/50 dark:bg-[#151525] border-t border-[#E8E2D8] dark:border-[#2D2D4A] text-center">
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-[#C9A96E] uppercase tracking-wider hover:gap-3 transition-all">Request Packaging Samples <i class="fas fa-arrow-right text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="bg-white dark:bg-[#1C1C2E] rounded-3xl border border-[#E8E2D8] dark:border-[#2D2D4A] overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[9px] font-bold text-[#C9A96E] bg-[#C9A96E]/10 px-2.5 py-1 rounded-full uppercase tracking-wider">Stationery</span>
+                            <span class="text-xs text-neutral-400">Project No. 089</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#1A1A2E] dark:text-white" style="font-family:'Cormorant Garamond',serif;">The E&R Bespoke Suite</h3>
+                        <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed mb-6">
+                            A bespoke luxury wedding invitation suite. We letterpress printed the classic script using custom mixed Pantone charcoal ink on extra-thick 600gsm cotton board, then applied hot rose gold foil gilding to the hand-beveled edges.
+                        </p>
+                        <ul class="space-y-2 text-xs text-neutral-500 dark:text-neutral-400">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Client:</strong> Private Brief</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Techniques:</strong> Letterpress + Rose Gold Edge</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Stock:</strong> Crane Lettra Cotton (600gsm)</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-[#FAF8F3]/50 dark:bg-[#151525] border-t border-[#E8E2D8] dark:border-[#2D2D4A] text-center">
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-[#C9A96E] uppercase tracking-wider hover:gap-3 transition-all">Request Stationery Samples <i class="fas fa-arrow-right text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="bg-white dark:bg-[#1C1C2E] rounded-3xl border border-[#E8E2D8] dark:border-[#2D2D4A] overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[9px] font-bold text-[#C9A96E] bg-[#C9A96E]/10 px-2.5 py-1 rounded-full uppercase tracking-wider">Corporate Identity</span>
+                            <span class="text-xs text-neutral-400">Project No. 115</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#1A1A2E] dark:text-white" style="font-family:'Cormorant Garamond',serif;">The Vantara Business Cards</h3>
+                        <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed mb-6">
+                            For an high-end architecture agency, we duplex-bonded a warm neutral board with deep slate grey board. The branding was blind debossed, and we cut a unique custom arched shape using a bespoke steel die.
+                        </p>
+                        <ul class="space-y-2 text-xs text-neutral-500 dark:text-neutral-400">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Client:</strong> Vantara Architects</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Techniques:</strong> Duplexing + Custom Die Cutting</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-[#C9A96E] text-[8px]"></i><strong>Stock:</strong> Colorplan Slate / Sand (700gsm)</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-[#FAF8F3]/50 dark:bg-[#151525] border-t border-[#E8E2D8] dark:border-[#2D2D4A] text-center">
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-[#C9A96E] uppercase tracking-wider hover:gap-3 transition-all">Request Corporate Samples <i class="fas fa-arrow-right text-[10px]"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- CTA -->
+    <section class="py-20 bg-[#1A1A2E] dark:bg-[#0A0814]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-white text-center mb-4" style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;">
+                Have a Project in <span class="gold-text">Mind?</span></h2>
+            <p class="text-neutral-400 mb-8 max-w-xl mx-auto">Let's create something that belongs in a gallery. Share
+                your vision and we'll bring it to life with the finest foil and embossing techniques.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn btn-primary btn-lg btn-shine">Start Your Project</a>
+                <a href="services.html" class="btn btn-lg"
+                    style="border:1.5px solid rgba(201,169,110,0.4);color:#C9A96E;">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Gallery filter
+        const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.style.background = '';
+                    b.style.color = '';
+                });
+                btn.classList.add('active');
+                btn.style.background = 'linear-gradient(135deg,#C9A96E,#9E7D46)';
+                btn.style.color = '#fff';
+
+                const filter = btn.dataset.filter;
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
