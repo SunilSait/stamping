@@ -1052,13 +1052,13 @@ textarea.form-input { resize: vertical; min-height: 120px; }
 
 /* Split hero column background for light and dark modes */
 .hero-right-bg {
-    background: linear-gradient(135deg, rgba(26, 26, 46, 0.85), rgba(13, 11, 18, 0.9)), url('banner_home2.png');
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.85), rgba(13, 11, 18, 0.9)), url('assets/banner_home2.png');
     background-size: cover;
     background-position: center;
 }
 
 .dark .hero-right-bg {
-    background: linear-gradient(135deg, rgba(13, 13, 26, 0.95), rgba(6, 6, 12, 0.97)), url('banner_home2.png');
+    background: linear-gradient(135deg, rgba(13, 13, 26, 0.95), rgba(6, 6, 12, 0.97)), url('assets/banner_home2.png');
     background-size: cover;
     background-position: center;
 }
