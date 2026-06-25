@@ -39,22 +39,26 @@
     <!-- Content -->
     <div class="relative z-10 text-center max-w-2xl w-full">
         <!-- Logo -->
-        <a href="index.html" class="inline-flex items-center gap-2.5 mb-12 group">
-            <svg width="34" height="34" viewBox="0 0 100 100" fill="none">
-                <defs><linearGradient id="gCS" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#C9A96E"/><stop offset="50%" stop-color="#F2D98A"/><stop offset="100%" stop-color="#C9A96E"/></linearGradient></defs>
-                <circle cx="50" cy="50" r="47" stroke="#C9A96E" stroke-width="2" stroke-opacity="0.4" fill="none"/>
-                <circle cx="50" cy="50" r="42" stroke="#C9A96E" stroke-width="0.8" stroke-dasharray="4 3" stroke-opacity="0.5" fill="none"/>
-                <path d="M50 15 L75 40 L75 60 L50 85 L25 60 L25 40 Z" fill="url(#gCS)" fill-opacity="0.12" stroke="url(#gCS)" stroke-width="2"/>
-                <path d="M40 38 L40 62 M40 38 L60 38 M40 50 L55 50" stroke="#C9A96E" stroke-width="3.5" stroke-linecap="round"/>
-            </svg>
-            <span class="font-bold text-xl text-white group-hover:text-[#C9A96E] transition-colors" style="font-family:'Cormorant Garamond',serif;">Foilcraft</span>
-        </a>
+        <div class="mb-12">
+            <a href="index.html" class="inline-flex items-center gap-2.5 group">
+                <svg width="34" height="34" viewBox="0 0 100 100" fill="none">
+                    <defs><linearGradient id="gCS" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#C9A96E"/><stop offset="50%" stop-color="#F2D98A"/><stop offset="100%" stop-color="#C9A96E"/></linearGradient></defs>
+                    <circle cx="50" cy="50" r="47" stroke="#C9A96E" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+                    <circle cx="50" cy="50" r="42" stroke="#C9A96E" stroke-width="0.8" stroke-dasharray="4 3" stroke-opacity="0.5" fill="none"/>
+                    <path d="M50 15 L75 40 L75 60 L50 85 L25 60 L25 40 Z" fill="url(#gCS)" fill-opacity="0.12" stroke="url(#gCS)" stroke-width="2"/>
+                    <path d="M40 38 L40 62 M40 38 L60 38 M40 50 L55 50" stroke="#C9A96E" stroke-width="3.5" stroke-linecap="round"/>
+                </svg>
+                <span class="font-bold text-xl text-white group-hover:text-[#C9A96E] transition-colors" style="font-family:'Cormorant Garamond',serif;">Foilcraft</span>
+            </a>
+        </div>
 
         <!-- Section tag -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#C9A96E]/30 bg-[#C9A96E]/8 mb-8">
-            <span class="w-1.5 h-1.5 rounded-full bg-[#C9A96E] animate-pulse"></span>
-            <span class="text-[#C9A96E] text-xs font-bold uppercase tracking-[0.2em]">New Collection Incoming</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-[#C9A96E] animate-pulse"></span>
+        <div class="mb-8">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#C9A96E]/30 bg-[#C9A96E]/8">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#C9A96E] animate-pulse"></span>
+                <span class="text-[#C9A96E] text-xs font-bold uppercase tracking-[0.2em]">New Collection Incoming</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#C9A96E] animate-pulse"></span>
+            </div>
         </div>
 
         <h1 class="text-white mb-4" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);line-height:1.1;">
@@ -63,25 +67,25 @@
         <p class="text-neutral-400 text-lg mb-10 max-w-md mx-auto">We're preparing our most luxurious foil collection yet — 24 exclusive new finishes and two new speciality print techniques. Be first to know.</p>
 
         <!-- Countdown -->
-        <div class="flex items-center justify-center gap-4 sm:gap-6 mb-12" id="countdown-container">
-            <div class="text-center">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-bold text-[#C9A96E] relative" style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);font-family:'Cormorant Garamond',serif;" id="cd-days">14</div>
-                <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-2 font-semibold">Days</div>
+        <div class="flex items-center justify-center gap-1.5 sm:gap-6 mb-12" id="countdown-container">
+            <div class="flex flex-col items-center w-12 sm:w-20 shrink-0">
+                <div class="w-full h-12 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-3xl font-bold text-[#C9A96E] relative" style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);font-family:'Cormorant Garamond',serif;" id="cd-days">14</div>
+                <div class="text-[9px] sm:text-[10px] text-neutral-500 uppercase tracking-wider sm:tracking-widest mt-1.5 sm:mt-2 font-semibold">Days</div>
             </div>
-            <div class="text-[#C9A96E]/40 text-2xl font-light">:</div>
-            <div class="text-center">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-bold text-[#C9A96E] relative" style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);font-family:'Cormorant Garamond',serif;" id="cd-hours">08</div>
-                <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-2 font-semibold">Hours</div>
+            <div class="text-[#C9A96E]/40 text-lg font-light sm:text-2xl">:</div>
+            <div class="flex flex-col items-center w-12 sm:w-20 shrink-0">
+                <div class="w-full h-12 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-3xl font-bold text-[#C9A96E] relative" style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);font-family:'Cormorant Garamond',serif;" id="cd-hours">08</div>
+                <div class="text-[9px] sm:text-[10px] text-neutral-500 uppercase tracking-wider sm:tracking-widest mt-1.5 sm:mt-2 font-semibold">Hours</div>
             </div>
-            <div class="text-[#C9A96E]/40 text-2xl font-light">:</div>
-            <div class="text-center">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-bold text-[#C9A96E] relative" style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);font-family:'Cormorant Garamond',serif;" id="cd-mins">45</div>
-                <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-2 font-semibold">Minutes</div>
+            <div class="text-[#C9A96E]/40 text-lg font-light sm:text-2xl">:</div>
+            <div class="flex flex-col items-center w-12 sm:w-20 shrink-0">
+                <div class="w-full h-12 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-3xl font-bold text-[#C9A96E] relative" style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);font-family:'Cormorant Garamond',serif;" id="cd-mins">45</div>
+                <div class="text-[9px] sm:text-[10px] text-neutral-500 uppercase tracking-wider sm:tracking-widest mt-1.5 sm:mt-2 font-semibold">Minutes</div>
             </div>
-            <div class="text-[#C9A96E]/40 text-2xl font-light">:</div>
-            <div class="text-center">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-bold text-[#C9A96E] relative" style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);font-family:'Cormorant Garamond',serif;" id="cd-secs">22</div>
-                <div class="text-[10px] text-neutral-500 uppercase tracking-widest mt-2 font-semibold">Seconds</div>
+            <div class="text-[#C9A96E]/40 text-lg font-light sm:text-2xl">:</div>
+            <div class="flex flex-col items-center w-12 sm:w-20 shrink-0">
+                <div class="w-full h-12 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-3xl font-bold text-[#C9A96E] relative" style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);font-family:'Cormorant Garamond',serif;" id="cd-secs">22</div>
+                <div class="text-[9px] sm:text-[10px] text-neutral-500 uppercase tracking-wider sm:tracking-widest mt-1.5 sm:mt-2 font-semibold">Seconds</div>
             </div>
         </div>
 

@@ -26,7 +26,7 @@
             const isDark = html.classList.toggle('dark');
             localStorage.setItem('fc-dark-mode', isDark ? 'true' : 'false');
             const icon = btn.querySelector('i');
-            if (icon) icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+            if (icon) icon.className = isDark ? 'fas fa-sun text-yellow-400' : 'fas fa-moon';
         });
     });
 
@@ -47,7 +47,7 @@
         if (localStorage.getItem('fc-dark-mode') === 'true' ||
             (!localStorage.getItem('fc-dark-mode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             html.classList.add('dark');
-            document.querySelectorAll('.dark-toggle i').forEach(i => i.className = 'fas fa-sun');
+            document.querySelectorAll('.dark-toggle i').forEach(i => i.className = 'fas fa-sun text-yellow-400');
         }
         if (localStorage.getItem('fc-rtl') === 'true') {
             html.setAttribute('dir', 'rtl');

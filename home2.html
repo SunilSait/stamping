@@ -18,188 +18,253 @@
 <body>
     <div id="navbar-container"></div>
 
-    <!-- ===== EDITORIAL HERO ===== -->
-    <section class="relative overflow-hidden bg-[#FAF8F3] dark:bg-[#0D0D1A] min-h-[90vh] flex items-center">
-        <!-- Fine grid overlay -->
-        <div class="absolute inset-0 pointer-events-none"
-            style="background-image:linear-gradient(rgba(201,169,110,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,110,0.05) 1px,transparent 1px);background-size:40px 40px;">
+    <!-- ===== CINEMATIC HERO ===== -->
+    <section id="hero-cinematic" class="relative overflow-hidden min-h-screen flex flex-col"
+        style="background-image: linear-gradient(rgba(8, 8, 18, 0.55), rgba(8, 8, 18, 0.65)), url('banner_home2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+        <!-- Animated grain overlay -->
+        <div class="absolute inset-0 pointer-events-none opacity-[0.03] z-[1]"
+            style="background-image:url('data:image/svg+xml,%3Csvg viewBox=%270 0 256 256%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%274%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27/%3E%3C/svg%3E');background-size:128px 128px;">
         </div>
 
-        <!-- Dark half background (right) -->
-        <div class="absolute right-0 top-0 bottom-0 w-1/2 hidden xl:block hero-right-bg"></div>
+        <!-- Radial glow behind card -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full pointer-events-none z-0"
+            style="background:radial-gradient(circle,rgba(201,169,110,0.08) 0%,transparent 70%);"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full relative z-10">
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-0 min-h-[85vh] items-stretch">
+        <!-- Floating geometric accents -->
+        <div class="absolute top-[12%] left-[8%] w-24 h-24 border border-[#C9A96E]/15 rounded-full hero-float-1 pointer-events-none z-0"></div>
+        <div class="absolute bottom-[18%] right-[10%] w-16 h-16 border border-[#C9A96E]/10 hero-float-2 pointer-events-none z-0" style="transform:rotate(45deg);"></div>
+        <div class="absolute top-[25%] right-[15%] w-2 h-2 bg-[#C9A96E]/30 rounded-full hero-float-3 pointer-events-none z-0"></div>
+        <div class="absolute bottom-[30%] left-[12%] w-1.5 h-1.5 bg-[#C9A96E]/20 rounded-full hero-float-1 pointer-events-none z-0"></div>
+        <div class="absolute top-[60%] left-[5%] w-px h-20 bg-gradient-to-b from-transparent via-[#C9A96E]/20 to-transparent hero-float-2 pointer-events-none z-0"></div>
+        <div class="absolute top-[15%] right-[6%] w-px h-28 bg-gradient-to-b from-transparent via-[#C9A96E]/15 to-transparent hero-float-3 pointer-events-none z-0"></div>
 
-                <!-- Left editorial text column -->
-                <div class="flex flex-col justify-center py-20 pr-0 xl:pr-16">
-                    <!-- Issue / volume tag -->
-                    <div class="flex items-center gap-4 mb-10">
-                        <div class="w-10 h-px bg-[#C9A96E]"></div>
-                        <span class="text-[10px] font-bold text-[#C9A96E] uppercase tracking-[0.35em]">Technique
-                            Editorial · Vol. 2</span>
+        <!-- Main content wrapper -->
+        <div class="flex-1 flex flex-col items-center justify-center relative z-10 px-4 sm:px-6 pt-28 pb-8">
+
+            <!-- Top badge -->
+            <div class="flex items-center gap-3 mb-8 animate-on-scroll fade-in">
+                <div class="hidden sm:block w-8 h-px bg-[#C9A96E]/60"></div>
+                <span class="text-[10px] font-bold text-[#C9A96E] uppercase tracking-[0.25em] sm:tracking-[0.4em]">Technique Editorial · Vol. 2</span>
+                <div class="hidden sm:block w-8 h-px bg-[#C9A96E]/60"></div>
+            </div>
+
+            <!-- Hero headline -->
+            <h1 class="text-center mb-6 animate-on-scroll slide-up"
+                style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:700;line-height:1.05;letter-spacing:-0.02em;color:#F0EBE0;">
+                Where <em class="not-italic gold-text">Foil</em> Meets<br>
+                <span class="text-[#F0EBE0]/60">Impression</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-white/80 text-center text-base sm:text-lg leading-relaxed max-w-lg mb-10 animate-on-scroll slide-up" style="animation-delay:0.1s; text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6);">
+                An editorial journey through hot foil stamping, blind embossing & die-cutting — with material swatches and sample galleries.
+            </p>
+
+            <!-- CTA row -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 animate-on-scroll slide-up" style="animation-delay:0.18s;">
+                <a href="#techniques" class="btn btn-primary btn-shine"><i class="fas fa-layer-group text-xs"></i> Explore Techniques</a>
+                <a href="#swatches" class="group inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wider border border-white/15 text-white/80 hover:border-[#C9A96E]/50 hover:text-[#C9A96E] transition-all duration-300">
+                    <i class="fas fa-swatchbook text-xs"></i> Browse Swatches
+                </a>
+            </div>
+
+            <!-- Interactive Visualizer Card + Controls -->
+            <div class="w-full max-w-md mx-auto animate-on-scroll slide-up" style="animation-delay:0.25s;">
+
+                <!-- Card -->
+                <div id="visualizer-card" class="w-full rounded-[24px] border shadow-2xl relative stock-black transition-all duration-500 ease-out flex flex-col justify-between p-7 mx-auto"
+                    style="max-width:360px;height:340px;transition: background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;">
+                    <!-- Monogram & Badge -->
+                    <div class="flex justify-between items-start">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center relative bg-white/5 border border-white/10">
+                            <div class="absolute inset-1 rounded-full border border-dashed border-white/20"></div>
+                            <span id="visualizer-monogram" class="text-xl font-bold foil-gold" style="font-family:'Cormorant Garamond',serif;">F</span>
+                        </div>
+                        <div id="visualizer-badge" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/10">
+                            <span id="visualizer-badge-dot" class="w-1.5 h-1.5 rounded-full bg-foil-gold"></span>
+                            <span id="visualizer-badge-text" class="text-[8px] font-bold text-white uppercase tracking-wider">Gold Foil</span>
+                        </div>
                     </div>
 
-                    <h1 class="text-[#1A1A2E] dark:text-[#F0EBE0] mb-6 animate-on-scroll slide-right"
-                        style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5.5vw,5rem);font-weight:700;line-height:1.02;letter-spacing:-0.01em;">
-                        Where<br>
-                        <em class="not-italic gold-text">Foil Meets</em><br>
-                        Impression
-                    </h1>
-
-                    <p class="text-[#6B6579] dark:text-neutral-400 text-lg leading-relaxed mb-8 max-w-sm animate-on-scroll slide-right"
-                        style="animation-delay:0.12s;">
-                        An editorial journey through hot foil stamping, blind embossing and die-cutting — with material
-                        swatches and sample galleries to guide every brief.
-                    </p>
-
-                    <!-- Technique Pills -->
-                    <div class="flex flex-wrap gap-2 mb-10 animate-on-scroll slide-right" style="animation-delay:0.2s;">
-                        <a href="#techniques"
-                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-[#C9A96E] text-[#C9A96E] hover:bg-[#C9A96E] hover:text-white transition-all">
-                            <i class="fas fa-star text-[9px]"></i> Foil Stamping
-                        </a>
-                        <a href="#techniques"
-                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-[#1A1A2E] dark:border-white/30 text-[#1A1A2E] dark:text-white hover:bg-[#1A1A2E] hover:text-white dark:hover:bg-white/10 transition-all">
-                            <i class="fas fa-circle-notch text-[9px]"></i> Embossing
-                        </a>
-                        <a href="#techniques"
-                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-[#1A1A2E] dark:border-white/30 text-[#1A1A2E] dark:text-white hover:bg-[#1A1A2E] hover:text-white dark:hover:bg-white/10 transition-all">
-                            <i class="fas fa-scissors text-[9px]"></i> Die Cutting
-                        </a>
+                    <!-- Card Center -->
+                    <div class="text-center my-auto py-3">
+                        <p class="text-neutral-400 text-[8px] uppercase tracking-[0.25em] mb-1">Artisan Print Sample</p>
+                        <h3 id="visualizer-title" class="text-white text-2xl font-semibold tracking-wide foil-gold" style="font-family:'Cormorant Garamond',serif;">Foilcraft Studio</h3>
+                        <div class="h-px w-14 mx-auto bg-white/10 my-2.5"></div>
+                        <p class="text-neutral-300 text-[10px] leading-relaxed italic max-w-[200px] mx-auto">"Tactile excellence designed to guide every premium brief."</p>
                     </div>
 
-                    <div class="flex gap-4 animate-on-scroll slide-right" style="animation-delay:0.28s;">
-                        <a href="#swatches" class="btn btn-primary btn-shine"><i class="fas fa-swatchbook text-xs"></i>
-                            Browse Swatches</a>
-                        <a href="contact.html" class="btn btn-secondary">Request Sample</a>
-                    </div>
-
-                    <!-- Pull quote divider -->
-                    <div class="mt-14 pt-8 border-t border-[#E8E2D8] dark:border-[#2D2D4A] animate-on-scroll slide-right"
-                        style="animation-delay:0.36s;">
-                        <p class="text-sm text-neutral-400 italic" style="font-family:'Cormorant Garamond',serif;">
-                            "The difference between ordinary and extraordinary is that little extra — applied with heat,
-                            pressure and 24-carat gold."
-                        </p>
-                        <div class="flex items-center gap-3 mt-3">
-                            <div class="w-6 h-px bg-[#C9A96E]"></div>
-                            <span class="text-[11px] text-[#C9A96E] font-semibold uppercase tracking-widest">Eleanor
-                                Ashby, Founder</span>
+                    <!-- Card Specs -->
+                    <div class="border-t border-white/10 pt-3 flex flex-col gap-1 text-[9px] text-neutral-400">
+                        <div class="flex justify-between">
+                            <span>FINISH</span>
+                            <span id="spec-technique" class="font-bold text-white uppercase tracking-wider">24K Rich Gold</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>STOCK</span>
+                            <span id="spec-paper" class="font-bold text-white uppercase tracking-wider">Ebony Matte 350g</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right editorial visual column -->
-                <div class="hidden xl:flex flex-col justify-center py-20 pl-16 relative h-[650px] hero-mockup-layered">
-                    <div class="relative w-full h-full max-w-lg mx-auto">
-                        <!-- Card 1: Premium Invitation Card (Top Right) -->
-                        <div class="absolute top-0 right-4 w-[290px] h-[350px] rounded-3xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] z-20 group"
-                            style="background: linear-gradient(145deg, #FDFCF9, #F5F0E8); border: 1px solid rgba(201, 169, 110, 0.25);">
-                            <div class="absolute inset-0 p-7 flex flex-col justify-between">
-                                <div class="flex justify-between items-start">
-                                    <div class="w-14 h-14 rounded-full flex items-center justify-center relative"
-                                        style="background: rgba(201,169,110,0.06); border: 1px solid rgba(201,169,110,0.3);">
-                                        <div class="absolute inset-1 rounded-full border border-dashed border-[#C9A96E]/20"></div>
-                                        <span class="text-xl font-bold text-[#C9A96E]" style="font-family:'Cormorant Garamond',serif;">A</span>
-                                    </div>
-                                    <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
-                                        style="background: rgba(201,169,110,0.15); border: 1px solid rgba(201,169,110,0.35);">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#C9A96E] to-[#F2D98A] animate-pulse"></div>
-                                        <span class="text-[9px] font-bold text-[#C9A96E] uppercase tracking-wider">Gold Foil</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="text-center space-y-2.5 my-auto">
-                                    <p class="text-[#1A1A2E] text-xl font-bold" style="font-family:'Cormorant Garamond',serif;">Alexandre & Marie</p>
-                                    <div class="h-px w-16 mx-auto" style="background: linear-gradient(90deg, transparent, #C9A96E, transparent);"></div>
-                                    <p class="text-[#6B6579] text-[9px] uppercase tracking-widest font-semibold leading-relaxed">Request the honour of your presence</p>
-                                    <p class="text-[#1A1A2E] text-[10px]">Saturday, the Fourteenth of September</p>
-                                </div>
-                                
-                                <div class="text-center border-t border-[#E8E2D8] pt-3">
-                                    <p class="text-[9px] text-[#C9A96E] font-semibold uppercase tracking-widest">Maison Laurent · Paris</p>
-                                </div>
-                            </div>
+                <!-- Control Swatches below card -->
+                <div class="mt-5 flex flex-col sm:flex-row gap-4 justify-between items-center bg-[#0E0E1C]/80 border border-white/8 rounded-2xl p-4 backdrop-blur-sm" style="max-width:360px;margin-left:auto;margin-right:auto;">
+                    <!-- Paper Stock -->
+                    <div class="flex flex-col gap-1.5 items-center sm:items-start">
+                        <span class="text-[9px] font-bold text-neutral-500 uppercase tracking-widest">Paper Stock</span>
+                        <div class="flex gap-2">
+                            <button class="w-7 h-7 rounded-full border-2 border-[#C9A96E] p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 paper-btn active" data-paper="black" data-label="Ebony Matte 350g" title="Midnight Black">
+                                <div class="w-full h-full rounded-full bg-[#12121E]"></div>
+                            </button>
+                            <button class="w-7 h-7 rounded-full border border-white/15 p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 paper-btn" data-paper="green" data-label="Forest Linen 350g" title="Forest Green">
+                                <div class="w-full h-full rounded-full bg-[#11261B]"></div>
+                            </button>
+                            <button class="w-7 h-7 rounded-full border border-white/15 p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 paper-btn" data-paper="blue" data-label="Imperial Smooth 350g" title="Imperial Blue">
+                                <div class="w-full h-full rounded-full bg-[#161B32]"></div>
+                            </button>
+                            <button class="w-7 h-7 rounded-full border border-white/15 p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 paper-btn" data-paper="white" data-label="Wild Cotton 350g" title="Cotton White">
+                                <div class="w-full h-full rounded-full bg-[#FDFBFA] border border-neutral-200"></div>
+                            </button>
                         </div>
-
-                        <!-- Card 2: Studio Portfolio Journal (Middle Left) -->
-                        <div class="absolute top-[140px] left-0 w-[260px] h-[330px] rounded-3xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] z-10 group"
-                            style="background: linear-gradient(135deg, #16162E, #232345); border: 1px solid rgba(255, 255, 255, 0.08);">
-                            <div class="absolute inset-0 p-6 flex flex-col justify-between">
-                                <div class="border-b border-white/10 pb-3">
-                                    <p class="text-[9px] text-neutral-400 font-bold uppercase tracking-widest">Foilcraft Studio</p>
-                                    <p class="text-[8px] text-[#C9A96E] font-medium tracking-wide">Limited Edition Print Run</p>
-                                </div>
-                                
-                                <div class="my-auto space-y-3">
-                                    <!-- Debossed logo mark -->
-                                    <div class="w-10 h-10 rounded-xl flex items-center justify-center"
-                                        style="background: rgba(201,169,110,0.06); border: 1px solid rgba(201,169,110,0.25);">
-                                        <i class="fas fa-book-open text-[#C9A96E] text-base"></i>
-                                    </div>
-                                    <h4 class="text-white text-lg font-bold leading-tight" style="font-family:'Cormorant Garamond',serif;">
-                                        Artisan Finish <span class="gold-text">Journal</span>
-                                    </h4>
-                                    <p class="text-neutral-400 text-[10px] leading-relaxed">
-                                        Hand-bound in premium book cloth with a deep blind debossing and 24K gold foil stamp.
-                                    </p>
-                                </div>
-                                
-                                <div class="flex items-center justify-between text-[8px] text-neutral-500 pt-3 border-t border-white/5">
-                                    <span>Vol. II Edition</span>
-                                    <span class="text-[#C9A96E] font-bold">DEBOSSED</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3: Material Swatch Card (Bottom Right) -->
-                        <div class="absolute bottom-0 right-0 w-[310px] h-[210px] rounded-3xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] z-20 group"
-                            style="background: linear-gradient(145deg, #1C1C32, #131224); border: 1px solid rgba(201, 169, 110, 0.25);">
-                            <div class="absolute inset-0 p-5 flex flex-col justify-between">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="text-[9px] font-bold text-neutral-400 uppercase tracking-widest">Active Foil Swatch Palette</span>
-                                    <span class="text-[8px] font-mono text-[#C9A96E] bg-[#C9A96E]/10 px-2 py-0.5 rounded">TEST 04</span>
-                                </div>
-                                
-                                <!-- Swatches Grid -->
-                                <div class="flex gap-4 my-auto">
-                                    <div class="flex flex-col items-center gap-1.5">
-                                        <div class="w-8 h-8 rounded-full border border-white/10 transition-transform duration-300 hover:scale-110 cursor-pointer shadow-lg"
-                                            style="background: linear-gradient(135deg, #C9A96E 0%, #F2D98A 100%);" title="24K Gold"></div>
-                                        <span class="text-[8px] text-neutral-400 font-mono">24K Gold</span>
-                                    </div>
-                                    <div class="flex flex-col items-center gap-1.5">
-                                        <div class="w-8 h-8 rounded-full border border-white/10 transition-transform duration-300 hover:scale-110 cursor-pointer shadow-lg"
-                                            style="background: linear-gradient(135deg, #C0C0C0 0%, #E8E8E8 100%);" title="Mirror Silver"></div>
-                                        <span class="text-[8px] text-neutral-400 font-mono">Silver</span>
-                                    </div>
-                                    <div class="flex flex-col items-center gap-1.5">
-                                        <div class="w-8 h-8 rounded-full border border-white/10 transition-transform duration-300 hover:scale-110 cursor-pointer shadow-lg"
-                                            style="background: linear-gradient(135deg, #E8C0B0 0%, #F4D4C8 100%);" title="Rose Gold"></div>
-                                        <span class="text-[8px] text-neutral-400 font-mono">Rose Gold</span>
-                                    </div>
-                                    <div class="flex flex-col items-center gap-1.5">
-                                        <div class="w-8 h-8 rounded-full border border-white/10 transition-transform duration-300 hover:scale-110 cursor-pointer shadow-lg"
-                                            style="background: linear-gradient(135deg, #B87333 0%, #E0A080 100%);" title="Copper"></div>
-                                        <span class="text-[8px] text-neutral-400 font-mono">Copper</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="border-t border-white/5 pt-3 flex items-center justify-between text-[9px] text-neutral-400">
-                                    <div class="flex items-center gap-1.5">
-                                        <i class="fas fa-file-alt text-[#C9A96E] text-xs"></i>
-                                        <span>Colorplan Imperial Blue 350gsm</span>
-                                    </div>
-                                    <span class="font-mono text-neutral-500">GSM: 350</span>
-                                </div>
-                            </div>
+                    </div>
+                    <!-- Foil Finish -->
+                    <div class="flex flex-col gap-1.5 items-center sm:items-end">
+                        <span class="text-[9px] font-bold text-neutral-500 uppercase tracking-widest text-center sm:text-right">Foil Finish</span>
+                        <div class="flex gap-2">
+                            <button class="w-7 h-7 rounded-full border-2 border-[#C9A96E] p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 foil-btn active" data-foil="gold" data-label="24K Rich Gold" title="24K Gold">
+                                <div class="w-full h-full rounded-full" style="background: linear-gradient(135deg, #C9A96E, #F2D98A);"></div>
+                            </button>
+                            <button class="w-7 h-7 rounded-full border border-white/15 p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 foil-btn" data-foil="silver" data-label="Mirror Silver" title="Mirror Silver">
+                                <div class="w-full h-full rounded-full" style="background: linear-gradient(135deg, #B0B0B8, #FFFFFF);"></div>
+                            </button>
+                            <button class="w-7 h-7 rounded-full border border-white/15 p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 foil-btn" data-foil="rosegold" data-label="Polished Rose" title="Rose Gold">
+                                <div class="w-full h-full rounded-full" style="background: linear-gradient(135deg, #B76E79, #F3CFCD);"></div>
+                            </button>
+                            <button class="w-7 h-7 rounded-full border border-white/15 p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 foil-btn" data-foil="copper" data-label="Satin Copper" title="Copper">
+                                <div class="w-full h-full rounded-full" style="background: linear-gradient(135deg, #B87333, #F2A679);"></div>
+                            </button>
+                            <button class="w-7 h-7 rounded-full border border-white/15 p-0.5 cursor-pointer transition-transform duration-200 hover:scale-110 foil-btn" data-foil="holo" data-label="Rainbow Holo" title="Holographic">
+                                <div class="w-full h-full rounded-full" style="background: linear-gradient(135deg, #FF66B2, #66FFFF);"></div>
+                            </button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
+
+        <!-- Bottom technique ticker strip -->
+        <div class="relative z-10 border-t border-white/5 bg-[#060610]/80 backdrop-blur-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-center sm:justify-between items-center gap-4">
+                <div class="flex flex-wrap items-center justify-center gap-y-2 gap-x-4 sm:gap-6">
+                    <a href="#techniques" class="flex items-center gap-2 text-neutral-400 hover:text-[#C9A96E] transition-colors text-xs uppercase tracking-wider font-semibold">
+                        <i class="fas fa-star text-[#C9A96E] text-[10px]"></i> Hot Foil Stamping
+                    </a>
+                    <span class="hidden sm:inline-block w-px h-3 bg-white/10"></span>
+                    <a href="#techniques" class="flex items-center gap-2 text-neutral-400 hover:text-[#C9A96E] transition-colors text-xs uppercase tracking-wider font-semibold">
+                        <i class="fas fa-circle-notch text-[#C9A96E] text-[10px]"></i> Blind Embossing
+                    </a>
+                    <span class="hidden sm:inline-block w-px h-3 bg-white/10"></span>
+                    <a href="#techniques" class="flex items-center gap-2 text-neutral-400 hover:text-[#C9A96E] transition-colors text-xs uppercase tracking-wider font-semibold">
+                        <i class="fas fa-scissors text-[#C9A96E] text-[10px]"></i> Die Cutting
+                    </a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-6 h-px bg-[#C9A96E]/40"></div>
+                    <span class="text-[10px] text-[#C9A96E]/60 italic" style="font-family:'Cormorant Garamond',serif;">"Applied with heat, pressure & 24-carat gold."</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client-side visualizer interaction script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const card = document.getElementById('visualizer-card');
+                const monogram = document.getElementById('visualizer-monogram');
+                const title = document.getElementById('visualizer-title');
+                const badge = document.getElementById('visualizer-badge');
+                const badgeDot = document.getElementById('visualizer-badge-dot');
+                const badgeText = document.getElementById('visualizer-badge-text');
+                const specPaper = document.getElementById('spec-paper');
+                const specFoil = document.getElementById('spec-technique');
+
+                const paperBtns = document.querySelectorAll('.paper-btn');
+                const foilBtns = document.querySelectorAll('.foil-btn');
+
+                let activePaper = 'black';
+                let activeFoil = 'gold';
+
+                const foilClassMap = {
+                    gold: 'foil-gold',
+                    silver: 'foil-silver',
+                    rosegold: 'foil-rosegold',
+                    copper: 'foil-copper',
+                    holo: 'foil-holo'
+                };
+
+                const bgFoilClassMap = {
+                    gold: 'bg-foil-gold',
+                    silver: 'bg-foil-silver',
+                    rosegold: 'bg-foil-rosegold',
+                    copper: 'bg-foil-copper',
+                    holo: 'bg-foil-holo'
+                };
+
+                const paperClassMap = {
+                    black: 'stock-black',
+                    green: 'stock-green',
+                    blue: 'stock-blue',
+                    white: 'stock-white'
+                };
+
+                // Update stock selection
+                paperBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        paperBtns.forEach(b => {
+                            b.classList.remove('border-[#C9A96E]', 'border-2');
+                            b.classList.add('border', 'border-white/15');
+                        });
+                        btn.classList.remove('border', 'border-white/15');
+                        btn.classList.add('border-[#C9A96E]', 'border-2');
+
+                        const nextPaper = btn.getAttribute('data-paper');
+                        card.classList.remove(paperClassMap[activePaper]);
+                        card.classList.add(paperClassMap[nextPaper]);
+                        activePaper = nextPaper;
+
+                        specPaper.textContent = btn.getAttribute('data-label').toUpperCase();
+                    });
+                });
+
+                // Update foil selection
+                foilBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        foilBtns.forEach(b => {
+                            b.classList.remove('border-[#C9A96E]', 'border-2');
+                            b.classList.add('border', 'border-white/15');
+                        });
+                        btn.classList.remove('border', 'border-white/15');
+                        btn.classList.add('border-[#C9A96E]', 'border-2');
+
+                        const nextFoil = btn.getAttribute('data-foil');
+                        
+                        monogram.classList.remove(foilClassMap[activeFoil]);
+                        monogram.classList.add(foilClassMap[nextFoil]);
+
+                        title.classList.remove(foilClassMap[activeFoil]);
+                        title.classList.add(foilClassMap[nextFoil]);
+
+                        badgeDot.classList.remove(bgFoilClassMap[activeFoil]);
+                        badgeDot.classList.add(bgFoilClassMap[nextFoil]);
+
+                        badgeText.textContent = btn.getAttribute('title') + ' Foil';
+                        specFoil.textContent = btn.getAttribute('data-label').toUpperCase();
+
+                        activeFoil = nextFoil;
+                    });
+                });
+            });
+        </script>
     </section>
 
     <!-- ===== TECHNIQUES EDITORIAL ===== -->
@@ -257,7 +322,7 @@
                 <div class="relative group overflow-hidden"
                     style="min-height:500px;background:linear-gradient(145deg,#F5F0E8,#EDE5D6);">
                     <!-- Featured badge -->
-                    <div class="absolute top-5 left-5 z-10">
+                    <div class="absolute top-10 left-10 z-10">
                         <span class="badge badge-gold text-[10px]">✦ Featured</span>
                     </div>
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
@@ -398,26 +463,26 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
             <!-- Editorial header -->
-            <div class="flex items-end justify-between mb-12 border-b-2 border-[#1A1A2E] dark:border-[#C9A96E] pb-4">
-                <div>
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between items-center text-center sm:text-left mb-12 border-b-2 border-[#1A1A2E] dark:border-[#C9A96E] pb-4">
+                <div class="flex flex-col items-center sm:items-start w-full sm:w-auto">
                     <span class="text-[10px] font-bold text-[#C9A96E] uppercase tracking-[0.3em]">Material
                         Library</span>
                     <h2 class="text-[#1A1A2E] dark:text-white"
                         style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);">Foil Swatches
                         &amp; Substrates</h2>
                 </div>
-                <a href="services.html" class="btn btn-secondary btn-sm hidden sm:flex">Full Catalogue</a>
+                <a href="services.html" class="btn btn-secondary btn-sm hidden sm:flex mt-4 sm:mt-0">Full Catalogue</a>
             </div>
 
             <!-- Foil Swatches -->
             <div class="mb-14">
-                <p class="text-xs font-bold text-neutral-400 uppercase tracking-[0.2em] mb-6">Foil Finishes — 40 Colours
+                <p class="text-xs font-bold text-neutral-400 uppercase tracking-[0.2em] mb-6 text-center">Foil Finishes — 40 Colours
                     Available</p>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-4 reveal">
+                <div class="flex flex-wrap justify-center gap-4 reveal">
 
                     <!-- Swatch Card template -->
                     <div
-                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E]">
+                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E] w-[calc(50%-8px)] sm:w-[calc(33.33%-12px)] md:w-[calc(25%-12px)] xl:w-[calc(16.66%-14px)] min-w-[130px] max-w-[170px]">
                         <div class="h-20 relative"
                             style="background:linear-gradient(135deg,#B8860B,#C9A96E,#F2D98A,#9E7D46);">
                             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
@@ -432,7 +497,7 @@
                     </div>
 
                     <div
-                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E]">
+                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E] w-[calc(50%-8px)] sm:w-[calc(33.33%-12px)] md:w-[calc(25%-12px)] xl:w-[calc(16.66%-14px)] min-w-[130px] max-w-[170px]">
                         <div class="h-20 relative"
                             style="background:linear-gradient(135deg,#A8A8A8,#D4D4D4,#F0F0F0,#B0B0B0);">
                             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
@@ -447,7 +512,7 @@
                     </div>
 
                     <div
-                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E]">
+                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E] w-[calc(50%-8px)] sm:w-[calc(33.33%-12px)] md:w-[calc(25%-12px)] xl:w-[calc(16.66%-14px)] min-w-[130px] max-w-[170px]">
                         <div class="h-20 relative"
                             style="background:linear-gradient(135deg,#D4956A,#E8B090,#F4C8A8,#C07850);">
                             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
@@ -462,7 +527,7 @@
                     </div>
 
                     <div
-                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E]">
+                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E] w-[calc(50%-8px)] sm:w-[calc(33.33%-12px)] md:w-[calc(25%-12px)] xl:w-[calc(16.66%-14px)] min-w-[130px] max-w-[170px]">
                         <div class="h-20 relative"
                             style="background:linear-gradient(135deg,#B87333,#D4903A,#E8A860,#A06020);">
                             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
@@ -477,7 +542,7 @@
                     </div>
 
                     <div
-                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E]">
+                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E] w-[calc(50%-8px)] sm:w-[calc(33.33%-12px)] md:w-[calc(25%-12px)] xl:w-[calc(16.66%-14px)] min-w-[130px] max-w-[170px]">
                         <div class="h-20 relative"
                             style="background:linear-gradient(135deg,#FF0080,#8000FF,#00FFFF,#FF8C00,#C9A96E);">
                             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
@@ -492,7 +557,7 @@
                     </div>
 
                     <div
-                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E]">
+                        class="swatch-card group cursor-pointer rounded-2xl overflow-hidden border border-[#E8E2D8] dark:border-[#2D2D4A] hover:border-[#C9A96E] hover:shadow-lg transition-all bg-white dark:bg-[#1C1C2E] w-[calc(50%-8px)] sm:w-[calc(33.33%-12px)] md:w-[calc(25%-12px)] xl:w-[calc(16.66%-14px)] min-w-[130px] max-w-[170px]">
                         <div
                             class="h-20 relative flex items-center justify-center border-2 border-dashed border-[#E0D8CC] dark:border-[#3D3D5A]">
                             <div class="text-center">
@@ -511,7 +576,7 @@
 
             <!-- Substrate Grid -->
             <div>
-                <p class="text-xs font-bold text-neutral-400 uppercase tracking-[0.2em] mb-6">Substrates — Paper, Board
+                <p class="text-xs font-bold text-neutral-400 uppercase tracking-[0.2em] mb-6 text-center">Substrates — Paper, Board
                     &amp; Specialty</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 reveal">
 
@@ -640,7 +705,7 @@
                     <div class="text-[#C9A96E] text-2xl font-bold mb-4" style="font-family:'Cormorant Garamond',serif;">03 / Color Specifying</div>
                     <h3 class="text-sm font-bold text-[#1A1A2E] dark:text-white uppercase tracking-wider mb-2">100% Solid Black Plates</h3>
                     <p class="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed mb-4">
-                        Set all die elements to 100% Solid Key Black (K=100) on separate layers labeled "Foil Stamping" or "Embossing". Do not include gradients, transparencies, or mid-tones.
+                        Set all die elements to 100% Solid Key Black (K=100) on separate layers labeled "Foil Stamping" or "Embossing". Do not include gradients, transparencies, or mid.
                     </p>
                     <div class="mt-auto pt-4 border-t border-[#E8E2D8] dark:border-[#2D2D4A] flex items-center gap-2">
                         <span class="text-[9px] font-bold text-emerald-600 dark:text-emerald-500 bg-emerald-100 dark:bg-emerald-900/30 px-2 py-0.5 rounded uppercase tracking-wider">DO</span>

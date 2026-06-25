@@ -1062,3 +1062,122 @@ textarea.form-input { resize: vertical; min-height: 120px; }
     background-size: cover;
     background-position: center;
 }
+
+/* ==========================================================================
+   Live Print Visualizer Custom CSS
+   ========================================================================== */
+
+/* Foil Text Gradients */
+.foil-gold {
+    background: linear-gradient(135deg, #C9A96E 0%, #F2D98A 40%, #C9A96E 60%, #9E7D46 100%) !important;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.foil-silver {
+    background: linear-gradient(135deg, #B0B0B8 0%, #FFFFFF 35%, #D0D0D8 50%, #FFFFFF 65%, #90909A 100%) !important;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.foil-rosegold {
+    background: linear-gradient(135deg, #B76E79 0%, #F3CFCD 35%, #C27D88 50%, #F3CFCD 65%, #9E515D 100%) !important;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.foil-copper {
+    background: linear-gradient(135deg, #B87333 0%, #F2A679 35%, #C97D46 50%, #F2A679 65%, #8B4513 100%) !important;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.foil-holo {
+    background: linear-gradient(135deg, #FF66B2 0%, #FFB266 20%, #FFFF66 40%, #66FF66 60%, #66FFFF 80%, #B266FF 100%) !important;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Foil Solid Backgrounds */
+.bg-foil-gold { background: linear-gradient(135deg, #C9A96E 0%, #F2D98A 40%, #C9A96E 60%, #9E7D46 100%); }
+.bg-foil-silver { background: linear-gradient(135deg, #B0B0B8 0%, #FFFFFF 35%, #D0D0D8 50%, #FFFFFF 65%, #90909A 100%); }
+.bg-foil-rosegold { background: linear-gradient(135deg, #B76E79 0%, #F3CFCD 35%, #C27D88 50%, #F3CFCD 65%, #9E515D 100%); }
+.bg-foil-copper { background: linear-gradient(135deg, #B87333 0%, #F2A679 35%, #C97D46 50%, #F2A679 65%, #8B4513 100%); }
+.bg-foil-holo { background: linear-gradient(135deg, #FF66B2 0%, #FFB266 20%, #FFFF66 40%, #66FF66 60%, #66FFFF 80%, #B266FF 100%); }
+
+/* Paper Stocks styling (Visualizer Card Background) */
+.stock-black {
+    background-color: #12121E !important;
+    background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0), linear-gradient(145deg, #12121E, #0A0A10) !important;
+    background-size: 8px 8px, 100% 100% !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.stock-green {
+    background-color: #11261B !important;
+    background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0), linear-gradient(145deg, #11261B, #09150F) !important;
+    background-size: 10px 10px, 100% 100% !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.stock-blue {
+    background-color: #161B32 !important;
+    background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0), linear-gradient(145deg, #161B32, #0E1122) !important;
+    background-size: 9px 9px, 100% 100% !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.stock-white {
+    background-color: #FDFBFA !important;
+    background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 0), linear-gradient(145deg, #FDFBFA, #F5F2EC) !important;
+    background-size: 8px 8px, 100% 100% !important;
+    border-color: rgba(201, 169, 110, 0.3) !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(201, 169, 110, 0.25) !important;
+}
+
+/* Contrast overrides for light white paper stock */
+.stock-white .text-white {
+    color: #1A1A2E !important;
+}
+.stock-white .text-neutral-400 {
+    color: #6B6579 !important;
+}
+.stock-white .text-neutral-300 {
+    color: #4A4556 !important;
+}
+.stock-white .border-white\/10 {
+    border-color: rgba(26, 26, 46, 0.12) !important;
+}
+.stock-white .bg-white\/5 {
+    background-color: rgba(26, 26, 46, 0.04) !important;
+}
+.stock-white .border-white\/5 {
+    border-color: rgba(26, 26, 46, 0.06) !important;
+}
+.stock-white .bg-white\/10 {
+    background-color: rgba(201, 169, 110, 0.1) !important;
+}
+
+/* ============================================
+   Header & Mobile Navigation Overlay Rules
+   ============================================ */
+#main-nav {
+    background-color: color-mix(in srgb, var(--cream) 95%, transparent) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+#mobile-menu {
+    background-color: var(--cream) !important;
+}
+

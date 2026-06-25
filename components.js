@@ -114,7 +114,7 @@
         }).join('');
 
         return `
-        <nav id="main-nav" class="sticky top-0 z-50 bg-[#FAF8F3]/95 dark:bg-[#0D0D1A]/95 backdrop-blur-md border-b border-[#E8E2D8] dark:border-[#2D2D4A] transition-all duration-300">
+        <nav id="main-nav" class="sticky top-0 z-50 backdrop-blur-md border-b border-[#E8E2D8] dark:border-[#2D2D4A] transition-all duration-300">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
                 <div class="flex justify-between items-center h-20">
                     <!-- Logo -->
@@ -158,7 +158,7 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden xl:hidden bg-[#FAF8F3]/98 dark:bg-[#0D0D1A]/98 border-b border-[#E8E2D8] dark:border-[#2D2D4A]" style="position: absolute; top: 100%; left: 0; right: 0; z-index: 100; max-height: 85vh; overflow-y: auto;">
+            <div id="mobile-menu" class="hidden xl:hidden border-b border-[#E8E2D8] dark:border-[#2D2D4A]" style="position: absolute; top: 100%; left: 0; right: 0; z-index: 100; max-height: 85vh; overflow-y: auto;">
                 <div class="max-w-7xl mx-auto pt-2 pb-6">
                     <div class="flex flex-col gap-0 mb-4">
                         ${navLinksMobile}
@@ -166,11 +166,11 @@
                     <div class="flex flex-col sm:flex-row items-center gap-3 px-5 pt-4 border-t border-neutral-100 dark:border-[#2D2D4A]">
                         <div class="flex gap-2 w-full sm:w-auto">
                             <button class="js-dir-toggle flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#1C1C2E] border border-[#E8E2D8] dark:border-[#2D2D4A] text-neutral-600 dark:text-neutral-400 flex-1 sm:flex-none justify-center text-sm">
-                                <i class="fas fa-exchange-alt"></i>
+                                <i class="fas fa-exchange-alt text-sm"></i>
                                 <span class="text-xs font-bold uppercase tracking-wider">LTR / RTL</span>
                             </button>
                             <button class="js-theme-toggle flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#1C1C2E] border border-[#E8E2D8] dark:border-[#2D2D4A] text-neutral-600 dark:text-neutral-400 flex-1 sm:flex-none justify-center text-sm">
-                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-moon text-sm"></i>
                                 <span class="text-xs font-bold uppercase tracking-wider">Theme</span>
                             </button>
                         </div>
