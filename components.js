@@ -16,10 +16,10 @@
     const NAV_LINKS = [
         { label: 'Home', href: 'index.html' },
         { label: 'Home 2', href: 'home2.html' },
+        { label: 'About', href: 'about.html' },
         { label: 'Services', href: 'services.html' },
         { label: 'Gallery', href: 'gallery.html' },
         { label: 'Pricing', href: 'pricing.html' },
-        { label: 'About', href: 'about.html' },
         { label: 'Contact', href: 'contact.html' }
     ];
 

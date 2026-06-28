@@ -287,10 +287,10 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-1 mb-20 reveal">
 
                 <!-- Column 1 — Hot Foil -->
-                <div class="relative group overflow-hidden"
-                    style="min-height:500px;background:linear-gradient(145deg,#1A1A2E,#0D0B18);">
-                    <div class="absolute inset-0 flex flex-col justify-end p-8">
-                        <div class="absolute top-8 left-8 right-8">
+                <div class="relative group overflow-hidden min-h-[560px] lg:min-h-[500px] xl:min-h-[460px]"
+                    style="background:linear-gradient(145deg,#1A1A2E,#0D0B18);">
+                    <div class="h-full w-full flex flex-col p-8">
+                        <div class="w-full mb-8">
                             <!-- Foil wedding card mock -->
                             <div class="rounded-2xl h-40 p-4 flex flex-col justify-center text-center"
                                 style="background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);">
@@ -319,16 +319,16 @@
                 </div>
 
                 <!-- Column 2 — Blind Emboss (tall, featured) -->
-                <div class="relative group overflow-hidden"
-                    style="min-height:500px;background:linear-gradient(145deg,#F5F0E8,#EDE5D6);">
-                    <!-- Featured badge -->
-                    <div class="absolute top-10 left-10 z-10">
-                        <span class="badge badge-gold text-[10px]">✦ Featured</span>
-                    </div>
-                    <div class="absolute inset-0 flex flex-col justify-end p-8">
-                        <div class="absolute top-8 left-8 right-8">
+                <div class="relative group overflow-hidden min-h-[560px] lg:min-h-[500px] xl:min-h-[460px]"
+                    style="background:linear-gradient(145deg,#F5F0E8,#EDE5D6);">
+                    <div class="h-full w-full flex flex-col p-8">
+                        <div class="w-full mb-8">
                             <!-- Embossed packaging mock -->
-                            <div class="rounded-2xl h-40 overflow-hidden shadow-lg flex flex-col bg-white border border-[#E8E2D8]">
+                            <div class="relative rounded-2xl h-48 overflow-hidden shadow-lg flex flex-col bg-white border border-[#E8E2D8]">
+                                <!-- Featured badge -->
+                                <div class="absolute top-3 left-3 z-10">
+                                    <span class="badge badge-gold text-[10px]">✦ Featured</span>
+                                </div>
                                 <div class="flex-1 p-3 flex flex-col items-center justify-center text-center">
                                     <div class="w-10 h-10 rounded-full mb-1.5 flex items-center justify-center"
                                         style="background:#F5F0E8;border:1.5px solid #E0D8CC;">
@@ -362,10 +362,10 @@
                 </div>
 
                 <!-- Column 3 — Die Cut -->
-                <div class="relative group overflow-hidden"
-                    style="min-height:500px;background:linear-gradient(145deg,#1C1628,#0F0D18);">
-                    <div class="absolute inset-0 flex flex-col justify-end p-8">
-                        <div class="absolute top-8 left-8 right-8">
+                <div class="relative group overflow-hidden min-h-[560px] lg:min-h-[500px] xl:min-h-[460px]"
+                    style="background:linear-gradient(145deg,#1C1628,#0F0D18);">
+                    <div class="h-full w-full flex flex-col p-8">
+                        <div class="w-full mb-8">
                             <!-- Die-cut business card mock -->
                             <div class="h-40 flex flex-col items-center justify-center gap-2">
                                 <div class="rounded-2xl px-5 py-4 shadow-xl text-center"
@@ -745,10 +745,10 @@
             </div>
 
             <!-- Masonry editorial grid -->
-            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-flow-row-dense gap-3 reveal">
+            <div class="grid grid-cols-2 md:grid-cols-6 xl:grid-cols-4 grid-flow-row-dense gap-3 reveal">
 
                 <!-- Tall item 1 (1x2) -->
-                <div class="row-span-2 relative group rounded-3xl overflow-hidden cursor-pointer"
+                <div class="row-span-2 md:col-span-2 xl:col-span-1 relative group rounded-3xl overflow-hidden cursor-pointer"
                     style="background:linear-gradient(145deg,#1A1A2E,#0D0B18);min-height:340px;">
                     <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center">
                         <div class="w-16 h-20 rounded border-2 border-[#C9A96E] flex items-center justify-center mb-2"
@@ -768,7 +768,7 @@
                 </div>
 
                 <!-- Wide packaging item (2x1) -->
-                <div class="md:col-span-2 relative group rounded-3xl overflow-hidden cursor-pointer"
+                <div class="md:col-span-4 xl:col-span-2 relative group rounded-3xl overflow-hidden cursor-pointer"
                     style="background:linear-gradient(145deg,#2D1B00,#5C3D00);min-height:160px;">
                     <div class="absolute inset-0 flex items-center justify-center gap-8 p-6">
                         <div class="flex gap-3">
@@ -802,7 +802,7 @@
                 </div>
 
                 <!-- Item 2 (1x1) -->
-                <div class="relative group rounded-3xl overflow-hidden cursor-pointer"
+                <div class="md:col-span-2 xl:col-span-1 relative group rounded-3xl overflow-hidden cursor-pointer"
                     style="background:linear-gradient(145deg,#F5F0E8,#EDE5D6);min-height:160px;">
                     <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 p-5 text-center">
                         <div class="w-12 h-12 rounded-full flex items-center justify-center border-2 border-[#C9A96E]"
@@ -821,7 +821,7 @@
                 </div>
 
                 <!-- Item 3 (1x1) -->
-                <div class="relative group rounded-3xl overflow-hidden cursor-pointer"
+                <div class="md:col-span-2 xl:col-span-1 relative group rounded-3xl overflow-hidden cursor-pointer"
                     style="background:linear-gradient(145deg,#6B2D5E,#9E4080);min-height:160px;">
                     <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 p-5 text-center">
                         <div class="text-white text-lg font-bold" style="font-family:'Cormorant Garamond',serif;">
@@ -837,7 +837,7 @@
                 </div>
 
                 <!-- Item 5 (1x1) -->
-                <div class="relative group rounded-3xl overflow-hidden cursor-pointer"
+                <div class="md:col-span-3 xl:col-span-1 relative group rounded-3xl overflow-hidden cursor-pointer"
                     style="background:linear-gradient(145deg,#0A2540,#163A60);min-height:160px;">
                     <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 p-5 text-center">
                         <div class="text-white text-base font-bold" style="font-family:'Cormorant Garamond',serif;">
@@ -851,7 +851,7 @@
                 </div>
 
                 <!-- Item 6 (1x1) -->
-                <div class="relative group rounded-3xl overflow-hidden cursor-pointer"
+                <div class="col-span-2 md:col-span-3 xl:col-span-1 relative group rounded-3xl overflow-hidden cursor-pointer"
                     style="background:linear-gradient(145deg,#1C1C1C,#2A2A2A);min-height:160px;">
                     <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 p-5 text-center">
                         <div class="flex gap-2 mb-2">
